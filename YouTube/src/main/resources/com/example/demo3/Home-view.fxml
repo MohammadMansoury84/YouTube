@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="700.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.View.HomeController">
+   <children>
+      <VBox layoutY="-1.0" prefHeight="700.0" prefWidth="128.0" spacing="33.0" style="-fx-background-color: gray;">
+         <children>
+            <ImageView fitHeight="90.0" fitWidth="134.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/102352.png" />
+               </image>
+            </ImageView>
+            <Label text="     sidebar" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#goToHome" prefHeight="26.0" prefWidth="134.0" text="Home" />
+            <Separator prefWidth="200.0" style="-fx-background-color: black;" />
+            <Button mnemonicParsing="false" onAction="#goToLibrary" prefHeight="26.0" prefWidth="139.0" text="Library" />
+            <Separator prefWidth="200.0" style="-fx-background-color: black;" />
+            <Button mnemonicParsing="false" onAction="#goToSubscription" prefHeight="26.0" prefWidth="134.0" text="Subscriptions" />
+            <Separator prefWidth="200.0" style="-fx-background-color: black;" />
+            <Button mnemonicParsing="false" onAction="#goToChannel" prefHeight="26.0" prefWidth="137.0" text="Channel" />
+            <Separator prefWidth="200.0" style="-fx-background-color: black;" />
+            <Button mnemonicParsing="false" onAction="#goToProfile" prefHeight="26.0" prefWidth="137.0" text="Profile" />
+            <Separator prefWidth="200.0" style="-fx-background-color: black;" />
+            <Button mnemonicParsing="false" onAction="#logOut" prefHeight="26.0" prefWidth="133.0" text="Logout" />
+         </children>
+      </VBox>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#383838" height="30.0" layoutX="249.0" layoutY="100.0" stroke="BLACK" strokeType="INSIDE" width="301.0" />
+      <Text fill="WHITE" layoutX="350.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Home">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Text>
+      <Button layoutX="484.0" layoutY="102.0" mnemonicParsing="false" onAction="#search" text="search" />
+      <TextField fx:id="searchbar" layoutX="285.0" layoutY="102.0" prefHeight="26.0" prefWidth="187.0" promptText="content name or channel name" />
+      <Label layoutX="253.0" layoutY="96.0" text="🔍" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Separator layoutX="396.0" layoutY="141.0" orientation="VERTICAL" prefHeight="200.0" />
+      <ImageView fx:id="channelimage" fitHeight="150.0" fitWidth="200.0" layoutX="165.0" layoutY="177.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/Screenshot%202025-05-01%20190101.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="contentImage" fitHeight="150.0" fitWidth="200.0" layoutX="450.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/Screenshot%202025-05-01%20190101.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="192.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Channel" textAlignment="CENTER" wrappingWidth="146.93829345703125">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="498.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="content">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </Text>
+      <Rectangle fx:id="timeArea" arcHeight="5.0" arcWidth="5.0" fill="#3b3b3b" height="25.0" layoutX="599.0" layoutY="292.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="50.0" />
+      <Text fx:id="time" fill="WHITE" layoutX="607.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="486.0" layoutY="331.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="24.0" />
+      <Text fx:id="name" fill="WHITE" layoutX="518.0" layoutY="331.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="chanelName" fill="WHITE" layoutX="216.0" layoutY="337.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <Hyperlink layoutX="279.0" layoutY="585.0" onAction="#suggested" text="Click to view suggested content" textFill="RED">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Hyperlink>
+   </children>
+</AnchorPane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="700.0" prefWidth="700.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.View.ChannelPlayListController">
+   <children>
+      <ImageView fitHeight="83.0" fitWidth="144.0" layoutX="291.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/102352.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="586.0" layoutY="628.0" mnemonicParsing="false" onAction="#back" prefHeight="26.0" prefWidth="67.0" text="back" />
+      <Label layoutX="231.0" layoutY="148.0" text="Create Playlist" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="32.0" />
+         </font>
+      </Label>
+      <TextField fx:id="name" layoutX="347.0" layoutY="368.0" prefHeight="26.0" prefWidth="134.0" promptText="name...." />
+      <Label layoutX="207.0" layoutY="303.0" text="for User Or Channel:" textFill="#e46464">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="channel" layoutX="349.0" layoutY="303.0" mnemonicParsing="false" text="Channel" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="239.0" layoutY="371.0" text="Playlist name:" textFill="#e46464">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="296.0" layoutY="451.0" mnemonicParsing="false" onAction="#createPlaylist" text="Create Playlist" />
+   </children>
+</AnchorPane>

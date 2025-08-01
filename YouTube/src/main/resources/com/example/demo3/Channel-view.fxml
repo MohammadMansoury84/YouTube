@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="700.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.View.ChannelController">
+   <children>
+      <VBox prefHeight="700.0" prefWidth="128.0" spacing="33.0" style="-fx-background-color: gray;">
+         <children>
+            <ImageView fitHeight="90.0" fitWidth="134.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/102352.png" />
+               </image>
+            </ImageView>
+            <Label text="     sidebar" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#goToHome" prefHeight="26.0" prefWidth="134.0" text="Home" />
+            <Separator prefWidth="200.0" style="-fx-background-color: black;" />
+            <Button mnemonicParsing="false" onAction="#goToLibrary" prefHeight="26.0" prefWidth="139.0" text="Library" />
+            <Separator prefWidth="200.0" style="-fx-background-color: black;" />
+            <Button mnemonicParsing="false" onAction="#goToSubscription" prefHeight="26.0" prefWidth="134.0" text="Subscriptions" />
+            <Separator prefWidth="200.0" style="-fx-background-color: black;" />
+            <Button mnemonicParsing="false" onAction="#goToChannel" prefHeight="26.0" prefWidth="137.0" text="Channel" />
+            <Separator prefWidth="200.0" style="-fx-background-color: black;" />
+            <Button mnemonicParsing="false" onAction="#goToProfile" prefHeight="26.0" prefWidth="137.0" text="Profile" />
+            <Separator prefWidth="200.0" style="-fx-background-color: black;" />
+            <Button mnemonicParsing="false" onAction="#logOut" prefHeight="26.0" prefWidth="133.0" text="Logout" />
+         </children>
+      </VBox>
+      <Label layoutX="336.0" layoutY="14.0" text="Channel" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="31.0" />
+         </font>
+      </Label>
+      <Button layoutX="485.0" layoutY="323.0" mnemonicParsing="false" onAction="#create" text="create" />
+      <Label layoutX="266.0" layoutY="322.0" text="Creating a new channel :" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Separator layoutX="307.0" layoutY="281.0" prefHeight="3.0" prefWidth="177.0" />
+      <Button layoutX="497.0" layoutY="439.0" mnemonicParsing="false" onAction="#view" prefHeight="26.0" prefWidth="60.0" text="view" />
+      <Label layoutX="255.0" layoutY="438.0" text="View channel information :" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Separator layoutX="307.0" layoutY="394.0" prefHeight="3.0" prefWidth="177.0" />
+      <Label layoutX="266.0" layoutY="218.0" text="Creating a new playList :" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="485.0" layoutY="219.0" mnemonicParsing="false" onAction="#playList" text="playlist" />
+   </children>
+</AnchorPane>

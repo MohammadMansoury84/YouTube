@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="700.0" prefWidth="700.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.View.SubscriptionController">
+   <children>
+      <VBox prefHeight="700.0" prefWidth="128.0" spacing="33.0" style="-fx-background-color: gray;">
+         <children>
+            <ImageView fitHeight="90.0" fitWidth="134.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/102352.png" />
+               </image>
+            </ImageView>
+            <Label text="     sidebar" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#goToHome" prefHeight="26.0" prefWidth="134.0" text="Home" />
+            <Separator prefWidth="200.0" style="-fx-background-color: black;" />
+            <Button mnemonicParsing="false" onAction="#goToLibrary" prefHeight="26.0" prefWidth="139.0" text="Library" />
+            <Separator prefWidth="200.0" style="-fx-background-color: black;" />
+            <Button mnemonicParsing="false" onAction="#goToSubscription" prefHeight="26.0" prefWidth="134.0" text="Subscriptions" />
+            <Separator prefWidth="200.0" style="-fx-background-color: black;" />
+            <Button mnemonicParsing="false" onAction="#goToChannel" prefHeight="26.0" prefWidth="137.0" text="Channel" />
+            <Separator prefWidth="200.0" style="-fx-background-color: black;" />
+            <Button mnemonicParsing="false" onAction="#goToProfile" prefHeight="26.0" prefWidth="137.0" text="Profile" />
+            <Separator prefWidth="200.0" style="-fx-background-color: black;" />
+            <Button mnemonicParsing="false" onAction="#logOut" prefHeight="26.0" prefWidth="133.0" text="Logout" />
+         </children>
+      </VBox>
+      <ListView fx:id="Subscriptions" layoutX="318.0" layoutY="142.0" prefHeight="497.0" prefWidth="194.0" />
+      <Label layoutX="354.0" layoutY="103.0" text="Subscriptions" textFill="RED">
+         <font>
+            <Font name="Comic Sans MS Bold" size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

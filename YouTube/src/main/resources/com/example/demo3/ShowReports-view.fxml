@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="700.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.View.ShowReportsController">
+   <children>
+      <Button layoutX="634.0" layoutY="661.0" mnemonicParsing="false" onAction="#back" text="back" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#464646" height="554.0" layoutX="14.0" layoutY="107.0" stroke="BLACK" strokeType="INSIDE" width="370.0" />
+      <Text fill="RED" layoutX="176.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reports">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <ListView fx:id="reportList" layoutX="25.0" layoutY="120.0" prefHeight="526.0" prefWidth="347.0" />
+      <ImageView fitHeight="55.0" fitWidth="200.0" layoutX="310.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/102352.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4e4e4e" height="200.0" layoutX="401.0" layoutY="109.0" stroke="BLACK" strokeType="INSIDE" width="274.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4e4e4e" height="45.0" layoutX="589.0" layoutY="315.0" stroke="BLACK" strokeType="INSIDE" width="85.0" />
+      <Button layoutX="595.0" layoutY="324.0" mnemonicParsing="false" onAction="#playVideo" prefHeight="27.0" prefWidth="35.0" style="-fx-background-color: red;" text="◀" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="634.0" layoutY="324.0" mnemonicParsing="false" onAction="#pauseVideo" prefHeight="27.0" prefWidth="35.0" style="-fx-background-color: red;" text="⏸" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <TextField fx:id="contentId" layoutX="479.0" layoutY="327.0" prefHeight="18.0" prefWidth="71.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4e4e4e" height="26.0" layoutX="401.0" layoutY="327.0" stroke="BLACK" strokeType="INSIDE" width="78.0" />
+      <Label layoutX="405.0" layoutY="331.0" text="content Id :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <StackPane layoutX="411.0" layoutY="122.0" prefHeight="174.0" prefWidth="254.0">
+         <children>
+            <MediaView fx:id="mediaView" fitHeight="184.0" fitWidth="251.0" StackPane.alignment="CENTER" />
+         </children>
+      </StackPane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4b4b4b" height="129.0" layoutX="401.0" layoutY="418.0" stroke="BLACK" strokeType="INSIDE" width="280.0" />
+      <Label layoutX="483.0" layoutY="418.0" text="Manage reports" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="rejectBtn" layoutX="467.0" layoutY="448.0" mnemonicParsing="false" onAction="#reject" text="Reject" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="ff" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="acceptBtn" layoutX="540.0" layoutY="448.0" mnemonicParsing="false" onAction="#accept" text="Accept" textFill="WHITE" toggleGroup="$ff">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="472.0" layoutY="479.0" text="report Id :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="reportId" layoutX="535.0" layoutY="475.0" prefHeight="10.0" prefWidth="57.0" />
+      <Button layoutX="507.0" layoutY="511.0" mnemonicParsing="false" onAction="#manage" prefHeight="26.0" prefWidth="66.0" style="-fx-background-color: red;" text="manage">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

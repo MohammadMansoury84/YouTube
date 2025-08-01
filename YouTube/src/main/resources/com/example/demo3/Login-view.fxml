@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="700.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.View.LoginController">
+   <children>
+      <ImageView fitHeight="117.0" fitWidth="161.0" layoutX="269.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/102352.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="273.0" layoutY="213.0" text="Login" textFill="#faf4f4">
+         <font>
+            <Font name="System Bold Italic" size="59.0" />
+         </font>
+      </Label>
+      <TextField fx:id="username" layoutX="306.0" layoutY="350.0" prefHeight="25.0" prefWidth="139.0" promptText="usename..." />
+      <Label layoutX="233.0" layoutY="353.0" text="username:" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="236.0" layoutY="432.0" text="password:" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="login" layoutX="308.0" layoutY="501.0" mnemonicParsing="false" onAction="#Login" prefHeight="26.0" prefWidth="83.0" text="Login">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Button>
+      <Button fx:id="singUp" layoutX="465.0" layoutY="628.0" mnemonicParsing="false" onAction="#SingUp" text="SingUp" />
+      <Label layoutX="206.0" layoutY="631.0" text="If you are not registered, click this button." textFill="WHITE">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="password" layoutX="306.0" layoutY="427.0" prefHeight="26.0" prefWidth="139.0" promptText="password..." />
+   </children>
+</AnchorPane>

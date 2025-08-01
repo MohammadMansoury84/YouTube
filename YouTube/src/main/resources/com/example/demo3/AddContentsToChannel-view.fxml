@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="700.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.View.AddContentsToChannelController">
+   <children>
+      <ImageView fitHeight="75.0" fitWidth="128.0" layoutX="310.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/102352.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="227.0" layoutY="126.0" text="add content to channel" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS Bold" size="22.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="podcastType" layoutX="240.0" layoutY="192.0" mnemonicParsing="false" onAction="#podcastType" text="Podcast" textFill="#ff5f5f">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="mm" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="NormalVideoType" layoutX="345.0" layoutY="192.0" mnemonicParsing="false" onAction="#NormalVideo" text="Normal Video" textFill="#ff6363" toggleGroup="$mm">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="Regular" layoutX="66.0" layoutY="277.0" mnemonicParsing="false" onAction="#regular" text="Regular" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="cc" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="Special" layoutX="159.0" layoutY="275.0" mnemonicParsing="false" onAction="#special" text="special" textFill="WHITE" toggleGroup="$cc" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </RadioButton>
+      <TextField fx:id="Title" layoutX="113.0" layoutY="325.0" visible="false" />
+      <Label fx:id="title" layoutX="66.0" layoutY="325.0" text="title :" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="description" layoutX="113.0" layoutY="371.0" prefHeight="99.0" prefWidth="150.0" visible="false" />
+      <Label fx:id="Description" layoutX="14.0" layoutY="408.0" text="description :" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="duration" layoutX="114.0" layoutY="488.0" promptText="xx : yy" visible="false" />
+      <Label fx:id="time" layoutX="33.0" layoutY="488.0" text="duration :" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="news" contentDisplay="CENTER" graphicTextGap="5.0" layoutX="113.0" layoutY="653.0" mnemonicParsing="false" onAction="#news" prefHeight="18.0" prefWidth="115.0" text="NEWS" textAlignment="CENTER" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="ff" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="game" layoutX="194.0" layoutY="619.0" mnemonicParsing="false" onAction="#game" text="GAME" textFill="WHITE" toggleGroup="$ff" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="podcast" layoutX="114.0" layoutY="621.0" mnemonicParsing="false" onAction="#podcast" text="PODCAST" textFill="WHITE" toggleGroup="$ff" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="music" layoutX="194.0" layoutY="586.0" mnemonicParsing="false" onAction="#music" text="MUSIC" textFill="WHITE" toggleGroup="$ff" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="live" layoutX="113.0" layoutY="586.0" mnemonicParsing="false" onAction="#live" prefHeight="19.0" prefWidth="71.0" text="LIVE" textFill="WHITE" toggleGroup="$ff" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="society" layoutX="193.0" layoutY="558.0" mnemonicParsing="false" onAction="#society" text="SOCIETY" textFill="WHITE" toggleGroup="$ff" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="history" layoutX="193.0" layoutY="526.0" mnemonicParsing="false" onAction="#history" text="HISTORY" textFill="WHITE" toggleGroup="$ff" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="english" layoutX="114.0" layoutY="558.0" mnemonicParsing="false" onAction="#english" text="ENGLISH" textFill="WHITE" toggleGroup="$ff" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="sport" layoutX="114.0" layoutY="526.0" mnemonicParsing="false" onAction="#sport" text="SPORT" textFill="WHITE" toggleGroup="$ff" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </RadioButton>
+      <Label fx:id="catergory" layoutX="33.0" layoutY="575.0" text="catergory :" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="select" layoutX="390.0" layoutY="275.0" mnemonicParsing="false" onAction="#select" text="select" visible="false" />
+      <Label fx:id="file" layoutX="283.0" layoutY="277.0" text="File selection :" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="cover" layoutX="286.0" layoutY="325.0" text="Choose a video cover :" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <ListView fx:id="contentList" layoutX="549.0" layoutY="246.0" prefHeight="400.0" prefWidth="128.0" visible="false" />
+      <Button fx:id="choose" layoutX="447.0" layoutY="325.0" mnemonicParsing="false" onAction="#choose" text="Choose" visible="false" />
+      <TextField fx:id="podcaster" layoutX="405.0" layoutY="370.0" prefHeight="26.0" prefWidth="82.0" visible="false" />
+      <Separator fx:id="s2" layoutX="535.0" layoutY="271.0" orientation="VERTICAL" prefHeight="406.0" prefWidth="6.0" visible="false" />
+      <Label fx:id="content" layoutX="581.0" layoutY="212.0" text="content " textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="name" layoutX="287.0" layoutY="373.0" text="podcaster name:" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="formatMP4" layoutX="357.0" layoutY="413.0" mnemonicParsing="false" onAction="#formatMP4" text="MP4" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="hh" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="formatMOV" layoutX="356.0" layoutY="458.0" mnemonicParsing="false" onAction="#formatMOV" text="MOV" textFill="WHITE" toggleGroup="$hh" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="formatMKV" layoutX="356.0" layoutY="436.0" mnemonicParsing="false" onAction="#formatMKV" text="MKV" textFill="WHITE" toggleGroup="$hh" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </RadioButton>
+      <Label fx:id="format" layoutX="288.0" layoutY="445.0" text="format :" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="formatWMV" layoutX="356.0" layoutY="479.0" mnemonicParsing="false" onAction="#formatWMV" text="WMV" textFill="WHITE" toggleGroup="$hh" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="Quality360" layoutX="358.0" layoutY="535.0" mnemonicParsing="false" onAction="#Quality360" text="360" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="pp" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="Quality480" layoutX="358.0" layoutY="557.0" mnemonicParsing="false" onAction="#Quality480" text="480" textFill="WHITE" toggleGroup="$pp" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="Quality720" layoutX="358.0" layoutY="579.0" mnemonicParsing="false" onAction="#Quality720" text="720" textFill="WHITE" toggleGroup="$pp" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="Quality1080" layoutX="359.0" layoutY="601.0" mnemonicParsing="false" onAction="#Quality1080" text="1080" textFill="WHITE" toggleGroup="$pp" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></RadioButton>
+      <Label fx:id="Quality" layoutX="288.0" layoutY="566.0" text="Quality :" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Separator fx:id="s1" layoutX="272.0" layoutY="271.0" orientation="VERTICAL" prefHeight="406.0" prefWidth="0.0" visible="false" />
+      <Button layoutX="620.0" layoutY="658.0" mnemonicParsing="false" onAction="#back" prefHeight="26.0" prefWidth="52.0" text="back" />
+      <Button layoutX="315.0" layoutY="658.0" mnemonicParsing="false" onAction="#add" prefHeight="26.0" prefWidth="70.0" text="add" />
+   </children>
+</AnchorPane>

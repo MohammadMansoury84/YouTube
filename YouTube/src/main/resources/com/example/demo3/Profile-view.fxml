@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="700.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.View.ProfileController">
+   <children>
+      <VBox prefHeight="700.0" prefWidth="128.0" spacing="33.0" style="-fx-background-color: gray;">
+         <children>
+            <ImageView fitHeight="90.0" fitWidth="134.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/102352.png" />
+               </image>
+            </ImageView>
+            <Label text="     sidebar" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#goToHome" prefHeight="26.0" prefWidth="134.0" text="Home" />
+            <Separator prefWidth="200.0" style="-fx-background-color: black;" />
+            <Button mnemonicParsing="false" onAction="#goToLibrary" prefHeight="26.0" prefWidth="139.0" text="Library" />
+            <Separator prefWidth="200.0" style="-fx-background-color: black;" />
+            <Button mnemonicParsing="false" onAction="#goToSubscription" prefHeight="26.0" prefWidth="134.0" text="Subscriptions" />
+            <Separator prefWidth="200.0" style="-fx-background-color: black;" />
+            <Button mnemonicParsing="false" onAction="#goToChannel" prefHeight="26.0" prefWidth="137.0" text="Channel" />
+            <Separator prefWidth="200.0" style="-fx-background-color: black;" />
+            <Button mnemonicParsing="false" onAction="#goToProfile" prefHeight="26.0" prefWidth="137.0" text="Profile" />
+            <Separator prefWidth="200.0" style="-fx-background-color: black;" />
+            <Button mnemonicParsing="false" onAction="#logOut" prefHeight="26.0" prefWidth="133.0" text="Logout" />
+         </children>
+      </VBox>
+      <Label layoutX="350.0" layoutY="14.0" text="profile" textFill="#e7e7e7">
+         <font>
+            <Font name="System Bold Italic" size="42.0" />
+         </font>
+      </Label>
+      <Label layoutX="156.0" layoutY="176.0" text="profile:" textFill="WHITE">
+         <font>
+            <Font name="System Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="info" layoutX="172.0" layoutY="242.0" textFill="#f7f7f7">
+         <font>
+            <Font name="System Italic" size="22.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imageview" fitHeight="150.0" fitWidth="200.0" layoutX="457.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true" />
+      <Hyperlink layoutX="353.0" layoutY="594.0" onAction="#edit" text="Edit Information" textFill="#ff5b5b">
+         <font>
+            <Font name="Comic Sans MS Bold" size="14.0" />
+         </font>
+      </Hyperlink>
+   </children>
+</AnchorPane>

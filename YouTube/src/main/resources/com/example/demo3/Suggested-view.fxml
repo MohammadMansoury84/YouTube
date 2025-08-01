@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="700.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.View.SuggestedController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#434343" height="626.0" layoutX="17.0" layoutY="43.0" stroke="BLACK" strokeType="INSIDE" width="667.0" />
+      <Text fill="RED" layoutX="280.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="suggested content">
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="16.0" />
+         </font>
+      </Text>
+      <Separator layoutX="223.0" layoutY="43.0" orientation="VERTICAL" prefHeight="626.0" prefWidth="5.0" />
+      <Separator layoutX="443.0" layoutY="43.0" orientation="VERTICAL" prefHeight="626.0" prefWidth="5.0" />
+      <Separator layoutX="17.0" layoutY="189.0" prefHeight="0.0" prefWidth="667.0" />
+      <Separator layoutX="16.0" layoutY="345.0" prefHeight="0.0" prefWidth="667.0" />
+      <Separator layoutX="17.0" layoutY="511.0" prefHeight="0.0" prefWidth="667.0" />
+      <Button layoutX="625.0" layoutY="672.0" mnemonicParsing="false" onAction="#back" text="back" />
+      <StackPane layoutX="21.0" layoutY="47.0" prefHeight="124.0" prefWidth="200.0">
+         <children>
+            <ImageView fx:id="imageView" fitHeight="119.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/Screenshot%202025-05-01%20231326.png" />
+               </image>
+            </ImageView>
+         </children>
+      </StackPane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="26.0" layoutX="154.0" layoutY="143.0" stroke="BLACK" strokeType="INSIDE" width="51.0" />
+      <Text fx:id="time" fill="WHITE" layoutX="168.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fx:id="name" fill="WHITE" layoutX="60.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <StackPane layoutX="237.0" layoutY="47.0" prefHeight="124.0" prefWidth="200.0">
+         <children>
+            <ImageView fx:id="imageView1" fitHeight="119.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/Screenshot%202025-05-01%20231326.png" />
+               </image>
+            </ImageView>
+         </children>
+      </StackPane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="26.0" layoutX="379.0" layoutY="142.0" stroke="BLACK" strokeType="INSIDE" width="51.0" />
+      <Text fx:id="time1" fill="WHITE" layoutX="403.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="1.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fx:id="name1" fill="WHITE" layoutX="255.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <StackPane layoutX="466.0" layoutY="47.0" prefHeight="124.0" prefWidth="200.0">
+         <children>
+            <ImageView fx:id="imageView2" fitHeight="119.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/Screenshot%202025-05-01%20231326.png" />
+               </image>
+            </ImageView>
+         </children>
+      </StackPane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="26.0" layoutX="612.0" layoutY="139.0" stroke="BLACK" strokeType="INSIDE" width="51.0" />
+      <Text fx:id="time2" fill="WHITE" layoutX="630.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="1.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fx:id="name2" fill="WHITE" layoutX="489.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <StackPane layoutX="21.0" layoutY="196.0" prefHeight="124.0" prefWidth="200.0">
+         <children>
+            <ImageView fx:id="imageView3" fitHeight="119.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/Screenshot%202025-05-01%20231326.png" />
+               </image>
+            </ImageView>
+         </children>
+      </StackPane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="26.0" layoutX="158.0" layoutY="287.0" stroke="BLACK" strokeType="INSIDE" width="51.0" />
+      <Text fx:id="time3" fill="WHITE" layoutX="175.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fx:id="name3" fill="WHITE" layoutX="56.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <StackPane layoutX="20.0" layoutY="355.0" prefHeight="124.0" prefWidth="200.0">
+         <children>
+            <ImageView fx:id="imageView4" fitHeight="119.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/Screenshot%202025-05-01%20231326.png" />
+               </image>
+            </ImageView>
+         </children>
+      </StackPane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="26.0" layoutX="158.0" layoutY="445.0" stroke="BLACK" strokeType="INSIDE" width="51.0" />
+      <Text fx:id="time4" fill="WHITE" layoutX="176.0" layoutY="461.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fx:id="name4" fill="WHITE" layoutX="51.0" layoutY="493.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <StackPane layoutX="236.0" layoutY="196.0" prefHeight="124.0" prefWidth="200.0">
+         <children>
+            <ImageView fx:id="imageView5" fitHeight="119.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/Screenshot%202025-05-01%20231326.png" />
+               </image>
+            </ImageView>
+         </children>
+      </StackPane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="26.0" layoutX="379.0" layoutY="285.0" stroke="BLACK" strokeType="INSIDE" width="51.0" />
+      <Text fx:id="time5" fill="WHITE" layoutX="404.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="1.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fx:id="name5" fill="WHITE" layoutX="260.0" layoutY="322.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <StackPane layoutX="233.0" layoutY="355.0" prefHeight="124.0" prefWidth="200.0">
+         <children>
+            <ImageView fx:id="imageView6" fitHeight="119.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/Screenshot%202025-05-01%20231326.png" />
+               </image>
+            </ImageView>
+         </children>
+      </StackPane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="26.0" layoutX="379.0" layoutY="444.0" stroke="BLACK" strokeType="INSIDE" width="51.0" />
+      <Text fx:id="time6" fill="WHITE" layoutX="404.0" layoutY="460.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="1.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fx:id="name6" fill="WHITE" layoutX="260.0" layoutY="479.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <StackPane layoutX="233.0" layoutY="520.0" prefHeight="124.0" prefWidth="200.0">
+         <children>
+            <ImageView fx:id="imageView7" fitHeight="119.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/Screenshot%202025-05-01%20231326.png" />
+               </image>
+            </ImageView>
+         </children>
+      </StackPane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="26.0" layoutX="379.0" layoutY="608.0" stroke="BLACK" strokeType="INSIDE" width="51.0" />
+      <Text fx:id="time7" fill="WHITE" layoutX="404.0" layoutY="626.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="1.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fx:id="name7" fill="WHITE" layoutX="265.0" layoutY="647.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <StackPane layoutX="462.0" layoutY="199.0" prefHeight="124.0" prefWidth="200.0">
+         <children>
+            <ImageView fx:id="imageView8" fitHeight="119.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/Screenshot%202025-05-01%20231326.png" />
+               </image>
+            </ImageView>
+         </children>
+      </StackPane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="26.0" layoutX="611.0" layoutY="286.0" stroke="BLACK" strokeType="INSIDE" width="51.0" />
+      <Text fx:id="time8" fill="WHITE" layoutX="634.0" layoutY="303.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="1.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fx:id="name8" fill="WHITE" layoutX="484.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <StackPane layoutX="462.0" layoutY="355.0" prefHeight="124.0" prefWidth="200.0">
+         <children>
+            <ImageView fx:id="imageView9" fitHeight="119.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/Screenshot%202025-05-01%20231326.png" />
+               </image>
+            </ImageView>
+         </children>
+      </StackPane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="26.0" layoutX="609.0" layoutY="441.0" stroke="BLACK" strokeType="INSIDE" width="51.0" />
+      <Text fx:id="time9" fill="WHITE" layoutX="627.0" layoutY="459.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="1.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fx:id="name9" fill="WHITE" layoutX="486.0" layoutY="485.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

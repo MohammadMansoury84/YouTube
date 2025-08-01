@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="700.0" prefWidth="700.0" style="-fx-background-color: red;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.View.ContentInfoController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="366.0" layoutX="23.0" layoutY="70.0" stroke="BLACK" strokeType="INSIDE" width="653.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="35.0" layoutX="286.0" layoutY="29.0" stroke="BLACK" strokeType="INSIDE" width="126.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="18.0" layoutX="23.0" layoutY="445.0" stroke="BLACK" strokeType="INSIDE" width="653.0" />
+      <Slider fx:id="mediaSlider" layoutX="26.0" layoutY="447.0" prefHeight="14.0" prefWidth="643.0" />
+      <Button layoutX="624.0" layoutY="652.0" mnemonicParsing="false" onAction="#back" style="-fx-background-color: black;" text="back" textFill="WHITE" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="35.0" layoutX="287.0" layoutY="473.0" stroke="BLACK" strokeType="INSIDE" width="109.0" />
+      <StackPane layoutX="24.0" layoutY="71.0" prefHeight="366.0" prefWidth="653.0">
+         <children>
+            <MediaView fx:id="mediaView" fitHeight="325.0" fitWidth="621.0" StackPane.alignment="CENTER" />
+         </children>
+      </StackPane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="35.0" layoutX="24.0" layoutY="473.0" stroke="BLACK" strokeType="INSIDE" width="79.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="35.0" layoutX="599.0" layoutY="473.0" stroke="BLACK" strokeType="INSIDE" width="79.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="166.0" layoutX="155.0" layoutY="520.0" stroke="BLACK" strokeType="INSIDE" width="391.0" />
+      <ListView fx:id="comentList" layoutX="164.0" layoutY="526.0" prefHeight="154.0" prefWidth="372.0" />
+      <Text fx:id="name" fill="WHITE" layoutX="315.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="70.936767578125">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="26.0" layoutY="495.0" strokeType="OUTSIDE" strokeWidth="0.0" text="likes :">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="likes" fill="WHITE" layoutX="71.0" layoutY="498.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="599.0" layoutY="496.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Views :">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="views" fill="WHITE" layoutX="651.0" layoutY="499.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="26.778564453125">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Text>
+      <Button layoutX="297.0" layoutY="477.0" mnemonicParsing="false" onAction="#playVideo" prefHeight="27.0" prefWidth="35.0" style="-fx-background-color: red;" text="◀" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="349.0" layoutY="477.0" mnemonicParsing="false" onAction="#pauseVideo" prefHeight="27.0" prefWidth="35.0" style="-fx-background-color: red;" text="⏸" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

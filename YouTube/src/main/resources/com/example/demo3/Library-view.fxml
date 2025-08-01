@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="700.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.View.LibraryController">
+   <children>
+      <VBox prefHeight="700.0" prefWidth="128.0" spacing="33.0" style="-fx-background-color: gray;">
+         <children>
+            <ImageView fitHeight="90.0" fitWidth="134.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/102352.png" />
+               </image>
+            </ImageView>
+            <Label text="     sidebar" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#goToHome" prefHeight="26.0" prefWidth="134.0" text="Home" />
+            <Separator prefWidth="200.0" style="-fx-background-color: black;" />
+            <Button mnemonicParsing="false" onAction="#goToLibrary" prefHeight="26.0" prefWidth="139.0" text="Library" />
+            <Separator prefWidth="200.0" style="-fx-background-color: black;" />
+            <Button mnemonicParsing="false" onAction="#goToSubscription" prefHeight="26.0" prefWidth="134.0" text="Subscriptions" />
+            <Separator prefWidth="200.0" style="-fx-background-color: black;" />
+            <Button mnemonicParsing="false" onAction="#goToChannel" prefHeight="26.0" prefWidth="137.0" text="Channel" />
+            <Separator prefWidth="200.0" style="-fx-background-color: black;" />
+            <Button mnemonicParsing="false" onAction="#goToProfile" prefHeight="26.0" prefWidth="137.0" text="Profile" />
+            <Separator prefWidth="200.0" style="-fx-background-color: black;" />
+            <Button mnemonicParsing="false" onAction="#logOut" prefHeight="26.0" prefWidth="133.0" text="Logout" />
+         </children>
+      </VBox>
+      <Label layoutX="350.0" layoutY="14.0" text="Library" textFill="#e7e7e7">
+         <font>
+            <Font name="System Bold Italic" size="42.0" />
+         </font>
+      </Label>
+      <Button layoutX="616.0" layoutY="602.0" mnemonicParsing="false" onAction="#viewAccountInformation" text="information">
+         <font>
+            <Font name="Bodoni MT Condensed" size="13.0" />
+         </font>
+      </Button>
+      <Label layoutX="458.0" layoutY="598.0" prefHeight="34.0" prefWidth="167.0" text="View account information:" textFill="#e7e7e7">
+         <font>
+            <Font name="Bodoni MT Condensed" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="266.0" layoutY="646.0" text="Create a new playlist:" textFill="#e7e7e7">
+         <font>
+            <Font name="Bodoni MT Condensed" size="28.0" />
+         </font>
+      </Label>
+      <Button layoutX="449.0" layoutY="650.0" mnemonicParsing="false" onAction="#CreateNewPlaylist" prefHeight="26.0" prefWidth="61.0" text="create">
+         <font>
+            <Font name="Bodoni MT Condensed Bold" size="13.0" />
+         </font>
+      </Button>
+      <Label layoutX="149.0" layoutY="598.0" prefHeight="34.0" prefWidth="233.0" text="Get a premium subscription:" textFill="#e7e7e7">
+         <font>
+            <Font name="Bodoni MT Condensed" size="28.0" />
+         </font>
+      </Label>
+      <Button layoutX="380.0" layoutY="602.0" mnemonicParsing="false" onAction="#getPeremium" prefHeight="26.0" prefWidth="61.0" text="premium">
+         <font>
+            <Font name="Bodoni MT Condensed Bold" size="13.0" />
+         </font>
+      </Button>
+      <ListView fx:id="playList" layoutX="344.0" layoutY="135.0" prefHeight="400.0" prefWidth="136.0" />
+      <Label layoutX="358.0" layoutY="90.0" text="View playlist " textFill="#e7e7e7">
+         <font>
+            <Font name="Bodoni MT Condensed" size="28.0" />
+         </font>
+      </Label>
+      <Separator layoutX="270.0" layoutY="567.0" prefHeight="3.0" prefWidth="282.0" />
+   </children>
+</AnchorPane>
