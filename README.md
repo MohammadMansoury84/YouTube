@@ -8,9 +8,6 @@
 A desktop YouTube clone project that simulates core video-sharing platform features including users, channels, videos, playlists, comments, subscriptions, and content management.
 </p>
 
-<p align="center">
-<img src="screenshots/banner.png" width="800" alt="YouTube Clone Preview">
-</p>
 
 ---
 
