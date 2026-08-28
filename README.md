@@ -1,111 +1,130 @@
-🎬 YouTube Clone Application
+<h1 align="center">🎬 YouTube Clone Application</h1>
 
-::: {align="center"}
+<h3 align="center">
+📺 A Java-based YouTube Desktop Application
+</h3>
 
-📺 YouTube Desktop Application
+<p align="center">
+A desktop YouTube clone project that simulates core video-sharing platform features including users, channels, videos, playlists, comments, subscriptions, and content management.
+</p>
 
-A Java-based YouTube clone project that simulates core video-sharing
-platform features including users, channels, videos, playlists,
-comments, subscriptions, and content management.
-:::
+<p align="center">
+<img src="screenshots/banner.png" width="800" alt="YouTube Clone Preview">
+</p>
 
-🚀 About The Project
+---
 
-YouTube Clone is a desktop application developed using Java with
-an object-oriented design approach.
+<h2>🚀 About The Project</h2>
 
-The goal of this project is to model the main concepts behind a video
-streaming platform and implement relationships between users, channels,
-videos, playlists, and platform management.
+<p>
+<strong>YouTube Clone</strong> is a desktop application developed using 
+<strong>Java</strong> with an object-oriented design approach.
+</p>
 
-The project focuses on:
+<p>
+The goal of this project is to model the main concepts behind a video streaming platform and implement relationships between users, channels, videos, playlists, and platform management.
+</p>
 
-Object-Oriented Programming (OOP)
+<h3>Project Focus:</h3>
 
-Software design principles
+<ul>
+<li>Object-Oriented Programming (OOP)</li>
+<li>Software Design Principles</li>
+<li>Model-View Architecture</li>
+<li>Entity Relationships</li>
+<li>Application Logic Implementation</li>
+</ul>
 
-Model-View separation
 
-Entity relationships
+<h2>✨ Features</h2>
 
-Application logic implementation
+<h3>👤 User Management</h3>
 
-✨ Features
+<ul>
+<li>User registration and authentication</li>
+<li>Normal users and premium users</li>
+<li>Admin management</li>
+<li>User profiles</li>
+</ul>
 
-👤 User Management
 
-User registration and authentication
+<h3>📺 Channel System</h3>
 
-Normal users and premium users
+<ul>
+<li>Create and manage channels</li>
+<li>Upload content</li>
+<li>Channel playlists</li>
+<li>Channel management</li>
+</ul>
 
-Admin management
 
-User profiles
+<h3>🎥 Video & Content Management</h3>
 
-📺 Channel System
+<p>Supported content types:</p>
 
-Create and manage channels
+<ul>
+<li>Normal Videos</li>
+<li>Short Videos</li>
+<li>Live Streams</li>
+<li>Podcasts</li>
+</ul>
 
-Upload content
+<p>
+Features:
+</p>
 
-Channel playlists
+<ul>
+<li>Video categories</li>
+<li>Video quality and format management</li>
+<li>Content information management</li>
+</ul>
 
-Channel management
 
-🎥 Video & Content Management
+<h3>💬 Social Features</h3>
 
-Supported content types:
+<ul>
+<li>Comments</li>
+<li>Reports</li>
+<li>User interaction with content</li>
+</ul>
 
-Normal Videos
 
-Short Videos
+<h3>📂 Playlist System</h3>
 
-Live Streams
+<ul>
+<li>Create playlists</li>
+<li>Add and remove videos</li>
+<li>Manage channel playlists</li>
+</ul>
 
-Podcasts
 
-Features: - Video categories - Video quality and format management -
-Content information management
-
-💬 Social Features
-
-Comments
-
-Reports
-
-User interaction with content
-
-📂 Playlist System
-
-Create playlists
-
-Add/remove videos
-
-Manage channel playlists
-
-🛠️ Technologies Used
+<h2>🛠️ Technologies Used</h2>
 
 <p align="left">
 
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" width="50"/>{=html}
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" width="50"/>{=html}
+<a>
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" width="50" height="50"/>
+</a>
+
+<a>
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/javafx-original.svg" width="50" height="50"/>
+</a>
 
 </p>
 
-Java
 
-JavaFX
+<ul>
+<li>Java</li>
+<li>JavaFX</li>
+<li>Object-Oriented Programming</li>
+<li>MVC Architecture Concepts</li>
+<li>UML Design</li>
+</ul>
 
-Object-Oriented Programming
 
-MVC Architecture Concepts
+<h2>🏗️ Project Architecture</h2>
 
-UML Design
-
-🏗️ Project Architecture
-
-The project follows a structured architecture:
-
+<pre>
 src/main/java/com/example/demo3
 
 ├── Controller
@@ -134,90 +153,56 @@ src/main/java/com/example/demo3
 │
 └── View
     └── JavaFX UI Controllers
-
-🧩 Main Classes
-
-Account Module
-
-Handles different types of platform users:
-
-User
-
-Admin
-
-Premium User
-
-Normal User
-
-Content Module
-
-Abstract content management system:
-
-Video
-
-Short Video
-
-Podcast
-
-Live Stream
-
-Platform Entities
-
-Channel
-
-Playlist
-
-Category
-
-Comment
-
-Report
+</pre>
 
 
-▶️ How To Run
+<h2>▶️ How To Run</h2>
 
-Requirements
+<h3>Requirements</h3>
 
-Java JDK 17+
+<ul>
+<li>Java JDK 17+</li>
+<li>JavaFX SDK</li>
+</ul>
 
-JavaFX SDK
 
-Steps
+<h3>Steps</h3>
 
-Clone the repository:
+<ol>
+<li>Clone the repository</li>
+</ol>
 
+<pre>
 git clone https://github.com/MohammadMansoury84/YouTube.git
+</pre>
 
-Open the project in IntelliJ IDEA.
+<ol start="2">
+<li>Open the project in IntelliJ IDEA</li>
+<li>Configure JavaFX libraries</li>
+<li>Run MainPage.java</li>
+</ol>
 
-Configure JavaFX libraries.
 
-Run:
 
-<!-- -->
 
-MainPage.java
+<h2>👨‍💻 Developer</h2>
 
-🎯 Future Improvements
+<p>
+<strong>Mohammad Mansoury</strong>
+</p>
 
-Database integration
-
-REST API backend
-
-Cloud storage for videos
-
-Real authentication system
-
-Recommendation algorithm
-
-Online streaming support
-
-👨‍💻 Developer
-
-Mohammad Mansouri
-
+<p>
 Backend Developer | Java | Spring Boot | .NET | Python
+</p>
 
-GitHub: https://github.com/MohammadMansoury84
+<p>
+🐙 GitHub:
+<a href="https://github.com/MohammadMansoury84">
+MohammadMansoury84
+</a>
+</p>
 
+
+<h3 align="center">
 ⭐ If you like this project, consider giving it a star!
+</h3>
